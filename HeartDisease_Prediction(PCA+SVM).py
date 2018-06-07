@@ -1,4 +1,4 @@
-#problem1.py
+#HeartDisease_Prediction(PCA+SVM).py
 #This code performs the classification  of heart  disease by labeling the predicted values
 # in various classes, namely 0 for absence and 1 to 4 for presence and also try  
 # to check the model performance by comparing it against other Classifiers
@@ -62,7 +62,7 @@ print "Score without any split"
 print float(cnt)/303
 
 
-# printing the Likelihood of disease belonging to a particular class
+# printing the Possibility of disease belonging to a particular class
 # predicting the outcome
 count0 = 0
 count1 = 0
@@ -81,7 +81,7 @@ for i in modelSVM.predict(X_new):
         elif modelSVM.predict(i) ==4:
                 count4 = count4+1
 total = count0+count1+count2+count3+count4
-#Predicting the Likelihood
+#Predicting the Possibility
 print "The prediction is as follows:"
 print " Possibility of belonging to Class 0 is", float(count0)/total
 print " Possibility of belonging to Class 1 is", float(count1)/total
